@@ -1,0 +1,34 @@
+{
+   "devices":[
+      {
+         "device":"RUTX11",
+         "connection_type":"ssh",
+         "results":{
+            "format":"csv"
+         },
+         "commands":[
+            {"command" : "ATI", "expects" : "OK"},
+            {"command" : "AT+COPS", "expects" : "OK"},
+            {"command" : "ATE1", "expects" : "OK"},
+            {"command" : "AT+CMGF=1", "expects" : "OK"},
+            {"command" : "AT+CMGS=\"+37060451127\"", "arguments" : ["Test text"], "expects" : "OK"},
+            {"command" : "ad", "expects": "OK"}
+         ]
+      },
+      {
+         "device":"TRM240",
+         "connection_type":"serial",
+         "results":{
+            "format":"csv"
+         },
+         "commands":[
+            {"command" : "ATI", "expects" : "OK"},
+            {"command" : "AT+COPS", "expects" : "OK"},
+            {"command" : "ATE1", "expects" : "OK"},
+            {"command" : "AT+CMGF=1", "expects" : "OK"},
+            {"command" : "AT+CMGS=\"+37060451127\"", "arguments" : ["Test text"], "expects" : "OK"},
+            {"command" : "ad", "expects": "OK"}
+         ]
+      }
+   ]
+}
