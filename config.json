@@ -19,7 +19,7 @@
          "device":"TRM240",
          "connection_type":"serial",
          "results":{
-            "format":"csv"
+            "format":"txt"
          },
          "commands":[
             {"command" : "ATI", "expects" : "OK"},
