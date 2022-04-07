@@ -5,7 +5,7 @@ Program that tests Qualtec EC25 modem using AT commands of these device series:
 - TRM2xx
 - RUT9xx
 
-Program tests any device from device list in config file when given parameter -D, for example: `sudo python3 ./main.py -D RUTX11`.
+Program tests any device from device list in config file when given parameter `-D`, for example: `sudo python3 ./main.py -D RUTX11`.
 
 Note: the device must defined in config file. 
 Config JSON file [example](config.json). 
