@@ -1,4 +1,10 @@
 # Teltonika Qualtec EC25 modem tester
+
+Program that tests Qualtec EC25 modem using AT commands of these device series:
+- RTXxx
+- TRM2xx
+- RUT9xx
+
 Program tests any device from device list in config file when given parameter -D, for example: `sudo python3 ./main.py -D RUTX11`.
 
 Note: the device must defined in config file. 
@@ -34,11 +40,6 @@ pip3 install pyserial
 pip3 install paramiko
 pip3 install reprint
 ```
-
-Program that tests Qualtec EC25 modem using AT commands of these device series:
-- RTXxx
-- TRM2xx
-- RUT9xx
 
 ## Usage
 Run program as sudo with parameters: `sudo python3 ./main.py -D {device}`. For more information run `python3 ./main -h`
