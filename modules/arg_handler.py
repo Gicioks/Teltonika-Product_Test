@@ -24,8 +24,7 @@ class ArgHandler:
         parser.add_argument("-s", "--serial-port", dest="serial_port", default="/dev/ttyUSB2", help="Serial port", required=False)
         parser.add_argument("-b", "--baudrate", dest="serial_baudrate", default=115200, help="Serial baudrate", required=False)
         parser.add_argument("-t" "--timeout", dest="serial_timeout", default=0.5, help="Serial port timeout in seconds", required=False)
-        parser.add_argument("-w" "--wait-time", dest="serial_wait", default=1.0, help="Serial port wait time for device response in secons", required=False)
-
+    
         try:
             self.__argHandler = parser.parse_args()
         except Exception:

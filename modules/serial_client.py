@@ -6,7 +6,6 @@ from modules.exceptions import SerialConnectionException, SerialRetryException
 class SerialHandler:
     
     __serial_client__ = None
-    __sleepTime__ = 0
     __device = None
     __error_printer = None
 
@@ -14,7 +13,6 @@ class SerialHandler:
         port = args.get_serial_port()
         baudrate = args.get_serial_baudrate()
         time = args.get_serial_timeout()
-        self.__sleepTime__ = args.get_serial_wait()
         self.__device = config.get_param("device")
         self.__error_printer = ConsolePrinter(1)
         if not self.__open_connection(port, baudrate, time):
